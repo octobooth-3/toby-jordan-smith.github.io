@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { games } from "../../data/games";
+
+export function getStaticPaths() {
+  return games.map((game) => ({
+    params: { id: game.id },
+    props: { game },
+  }));
+}
+
+const { game } = Astro.props;
+const categoryClass = `tag-${game.category.toLowerCase()}`;
+---
+
+<Layout title={`${game.title} — Tailspin Toys`} description={game.description}>
+  <div class="detail-page">
+    <a href="/" class="back-link">← Back to games</a>
+    <h1>{game.title}</h1>
+    <div class="tags">
+      <span class={`tag ${categoryClass}`}>{game.category}</span>
+      <span class="tag tag-publisher">{game.publisher}</span>
+    </div>
+    <p class="rating">
+      Rating: <strong>★ {game.rating.toFixed(1)}</strong> / 5.0
+    </p>
+    <p class="full-description">{game.description}</p>
+    <a href="/" class="back-link">← Back to games</a>
+  </div>
+</Layout>

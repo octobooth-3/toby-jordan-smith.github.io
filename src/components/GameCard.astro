@@ -1,0 +1,22 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  category: string;
+  publisher: string;
+  description: string;
+}
+
+const { id, title, category, publisher, description } = Astro.props;
+const categoryClass = `tag-${category.toLowerCase()}`;
+---
+
+<div class="game-card" data-category={category} data-publisher={publisher}>
+  <h3>{title}</h3>
+  <div class="tags">
+    <span class={`tag ${categoryClass}`}>{category}</span>
+    <span class="tag tag-publisher">{publisher}</span>
+  </div>
+  <p class="description">{description}</p>
+  <a href={`/games/${id}`} class="view-details">View details →</a>
+</div>

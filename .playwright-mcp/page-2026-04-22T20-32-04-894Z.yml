@@ -1,0 +1,115 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - heading "Welcome to Tailspin Toys" [level=1] [ref=e3]
+    - paragraph [ref=e4]: Find your next game! And maybe even back one! Explore our collection!
+    - heading "Featured Games" [level=2] [ref=e5]
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - text: Publisher
+        - combobox "Publisher" [ref=e8]:
+          - option "All Publishers" [selected]
+          - option "ByteCraft Entertainment"
+          - option "CodeForge Studios"
+          - option "DevMasters Inc."
+          - option "PixelPrime Games"
+      - generic [ref=e9]:
+        - text: Category
+        - combobox "Category" [ref=e10]:
+          - option "All Categories" [selected]
+          - option "Action"
+          - option "Adventure"
+          - option "Puzzle"
+          - option "RPG"
+          - option "Strategy"
+      - generic [ref=e11]:
+        - text: Sort By
+        - combobox "Sort By" [ref=e12]:
+          - option "Top Rated" [selected]
+          - option "Name A–Z"
+          - option "Name Z–A"
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - heading "Code Quest Odyssey" [level=3] [ref=e15]
+        - generic [ref=e16]: Adventure CodeForge Studios
+        - paragraph [ref=e17]: Code Quest Odyssey launches you on an epic journey through enchanted digital realms where every line of code you write shapes the world around you. Solve ancient algorithmic puzzles, befriend quirky NPC companions, and uncover the secrets of the legendary Source Code.
+        - link "View details →" [ref=e18] [cursor=pointer]:
+          - /url: /games/code-quest-odyssey
+      - generic [ref=e19]:
+        - heading "Binary Frontier" [level=3] [ref=e20]
+        - generic [ref=e21]: Adventure DevMasters Inc.
+        - paragraph [ref=e22]: Binary Frontier transports you into an uncharted cyber-world where every innovative code unlock opens new possibilities. Explore vast procedurally generated landscapes, decode mysterious binary transmissions, and build alliances with other digital pioneers.
+        - link "View details →" [ref=e23] [cursor=pointer]:
+          - /url: /games/binary-frontier
+      - generic [ref=e24]:
+        - heading "Recursion Realm" [level=3] [ref=e25]
+        - generic [ref=e26]: RPG DevMasters Inc.
+        - paragraph [ref=e27]: Recursion Realm is a sprawling RPG where your character grows stronger by mastering recursive algorithms. Dive into dungeons that loop back on themselves, defeat bosses by finding their base case, and level up your skills across multiple programming paradigms.
+        - link "View details →" [ref=e28] [cursor=pointer]:
+          - /url: /games/recursion-realm
+      - generic [ref=e29]:
+        - heading "Script Strike" [level=3] [ref=e30]
+        - generic [ref=e31]: Action CodeForge Studios
+        - paragraph [ref=e32]: Script Strike propels you into a fast-paced coding battleground where every keystroke could change the tide of battle. Compete against rival developers in real-time challenges, deploy powerful script combos, and climb the leaderboards to become the ultimate code warrior.
+        - link "View details →" [ref=e33] [cursor=pointer]:
+          - /url: /games/script-strike
+      - generic [ref=e34]:
+        - heading "Algorithm Arena" [level=3] [ref=e35]
+        - generic [ref=e36]: Puzzle ByteCraft Entertainment
+        - paragraph [ref=e37]: Algorithm Arena drops you into competitive puzzle chambers where only the most efficient solutions survive. Race against the clock to implement sorting algorithms, optimize graph traversals, and prove that your code is faster than everyone else's.
+        - link "View details →" [ref=e38] [cursor=pointer]:
+          - /url: /games/algorithm-arena
+      - generic [ref=e39]:
+        - heading "Pixel Debugger" [level=3] [ref=e40]
+        - generic [ref=e41]: Puzzle PixelPrime Games
+        - paragraph [ref=e42]: Pixel Debugger challenges you to find and fix bugs hidden within beautifully crafted pixel-art worlds. Each level presents a broken program that you must debug by rearranging code blocks, fixing logic errors, and optimizing algorithms before time runs out.
+        - link "View details →" [ref=e43] [cursor=pointer]:
+          - /url: /games/pixel-debugger
+      - generic [ref=e44]:
+        - heading "Stack Overflow Saga" [level=3] [ref=e45]
+        - generic [ref=e46]: RPG DevMasters Inc.
+        - paragraph [ref=e47]: Stack Overflow Saga is an epic RPG adventure through the treacherous Stack Mountains. Manage your call stack carefully as you navigate recursive dungeons, avoid stack overflow traps, and collect powerful exception-handling artifacts to save the digital kingdom.
+        - link "View details →" [ref=e48] [cursor=pointer]:
+          - /url: /games/stack-overflow-saga
+      - generic [ref=e49]:
+        - heading "Syntax Wars" [level=3] [ref=e50]
+        - generic [ref=e51]: Strategy ByteCraft Entertainment
+        - paragraph [ref=e52]: Syntax Wars puts you in command of a code army battling for control of the Server Realm. Deploy functions as units, chain methods for devastating combos, and outmaneuver your opponents with superior architectural strategies in this tactical coding masterpiece.
+        - link "View details →" [ref=e53] [cursor=pointer]:
+          - /url: /games/syntax-wars
+      - generic [ref=e54]:
+        - heading "Function Fury" [level=3] [ref=e55]
+        - generic [ref=e56]: Action PixelPrime Games
+        - paragraph [ref=e57]: Function Fury is an adrenaline-pumping action game where every function call triggers explosive chain reactions. Compose higher-order attacks, curry your abilities for maximum damage, and prove that functional programming is the ultimate weapon.
+        - link "View details →" [ref=e58] [cursor=pointer]:
+          - /url: /games/function-fury
+      - generic [ref=e59]:
+        - heading "Compile Kingdom" [level=3] [ref=e60]
+        - generic [ref=e61]: Strategy CodeForge Studios
+        - paragraph [ref=e62]: Compile Kingdom tasks you with building and managing a thriving digital civilization. Gather resources by writing efficient code, construct buildings using design patterns, and defend your kingdom from runtime errors that threaten to crash your entire empire.
+        - link "View details →" [ref=e63] [cursor=pointer]:
+          - /url: /games/compile-kingdom
+      - generic [ref=e64]:
+        - heading "Loop Legends" [level=3] [ref=e65]
+        - generic [ref=e66]: Action PixelPrime Games
+        - paragraph [ref=e67]: Loop Legends traps you in a time-loop action game where each cycle gives you a chance to write better code. Master iteration patterns, break free from infinite loops, and use your programming prowess to defeat the Clock Daemon and escape the eternal cycle.
+        - link "View details →" [ref=e68] [cursor=pointer]:
+          - /url: /games/loop-legends
+      - generic [ref=e69]:
+        - heading "Null Pointer Nightmare" [level=3] [ref=e70]
+        - generic [ref=e71]: Adventure ByteCraft Entertainment
+        - paragraph [ref=e72]: Null Pointer Nightmare plunges you into a horror-themed adventure where dereferenced pointers unleash digital monsters. Navigate through corrupted memory spaces, track down null references, and restore order before the entire system crashes into oblivion.
+        - link "View details →" [ref=e73] [cursor=pointer]:
+          - /url: /games/null-pointer-nightmare
+  - generic [ref=e76]:
+    - button "Menu" [ref=e77]:
+      - img [ref=e79]
+      - generic: Menu
+    - button "Inspect" [ref=e83]:
+      - img [ref=e85]
+      - generic: Inspect
+    - button "Audit" [ref=e87]:
+      - img [ref=e89]
+      - generic: Audit
+    - button "Settings" [ref=e92]:
+      - img [ref=e94]
+      - generic: Settings

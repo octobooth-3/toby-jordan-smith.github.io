@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const name = "Toby Jordan-Smith";
+const tagline = "Software engineer & designer Sell Sell it ALL";
+const bio = "Engineer focused on building elegant, user-centered web applications and developer tools.";
+const github = "https://github.com/zeke";
+---
+
+<Layout title={`${name} — ${tagline}`} description={bio}>
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="/avatar.jpg" alt="Toby Jordan-Smith" class="avatar-img" width="96" height="96" />
+      <div>
+        <h1>{name}</h1>
+        <p class="tagline">{tagline}</p>
+        <p class="bio">{bio}</p>
+        <p class="links">
+          <a href={github} target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+    <div class="projects-grid">
+      <article class="card">
+        <h3>Developer Tools CLI</h3>
+        <p>Small, fast CLI utilities for developer workflows — focuses on DX and reliability.</p>
+        <p class="muted">Languages: TypeScript • Node</p>
+        <p><a href={github} target="_blank" rel="noopener">View on GitHub →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>User-facing Web App</h3>
+        <p>Design-forward web application with accessible UI and clear performance goals.</p>
+        <p class="muted">Tech: Astro • React • Tailwind</p>
+      </article>
+
+      <article class="card">
+        <h3>Open Source Library</h3>
+        <p>Reusable components and utilities for building reliable front-end systems.</p>
+        <p class="muted">License: MIT</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to work together or say hello, reach out via <a href={github} target="_blank" rel="noopener">GitHub</a>.</p>
+  </section>
+
+  <footer class="site-footer">
+    <small>© {new Date().getFullYear()} {name}. Built with Astro.</small>
+  </footer>
+</Layout>
+
+<style>
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+  .hero-inner {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 9999px;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(14,165,233,0.08));
+    color: var(--primary);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    overflow: hidden;
+  }
+  .avatar-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 9999px;
+    object-fit: cover;
+    display: block;
+  }
+  h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.75rem;
+  }
+  .tagline {
+    margin: 0 0 0.5rem;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .bio {
+    margin: 0 0 0.75rem;
+  }
+  .links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  #projects {
+    margin-top: 2.5rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .muted {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  #contact {
+    margin-top: 2.25rem;
+  }
+
+  .site-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  /* small screens */
+  @media (max-width: 560px) {
+    .hero-inner { flex-direction: row; }
+    .avatar { width: 72px; height: 72px; }
+  }
+</style>

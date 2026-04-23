@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - link "← Back to games" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - heading "Algorithm Arena" [level=1] [ref=e5]
+      - generic [ref=e6]:
+        - generic [ref=e7]: Puzzle
+        - generic [ref=e8]: ByteCraft Entertainment
+      - paragraph [ref=e9]:
+        - text: "Rating:"
+        - strong [ref=e10]: ★ 4.7
+        - text: / 5.0
+      - paragraph [ref=e11]: Algorithm Arena drops you into competitive puzzle chambers where only the most efficient solutions survive. Race against the clock to implement sorting algorithms, optimize graph traversals, and prove that your code is faster than everyone else's.
+      - link "← Back to games" [ref=e12] [cursor=pointer]:
+        - /url: /
+  - generic [ref=e15]:
+    - button "Menu" [ref=e16]:
+      - img [ref=e18]
+      - generic: Menu
+    - button "Inspect" [ref=e22]:
+      - img [ref=e24]
+      - generic: Inspect
+    - button "Audit" [ref=e26]:
+      - img [ref=e28]
+      - generic: Audit
+    - button "Settings" [ref=e31]:
+      - img [ref=e33]
+      - generic: Settings

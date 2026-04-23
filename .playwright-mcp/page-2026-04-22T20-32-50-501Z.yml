@@ -1,0 +1,59 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - heading "Welcome to Tailspin Toys" [level=1] [ref=e3]
+    - paragraph [ref=e4]: Find your next game! And maybe even back one! Explore our collection!
+    - heading "Featured Games" [level=2] [ref=e5]
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Publisher
+        - combobox "Publisher" [ref=e9] [cursor=pointer]:
+          - option "All Publishers" [selected]
+          - option "ByteCraft Entertainment"
+          - option "CodeForge Studios"
+          - option "DevMasters Inc."
+          - option "PixelPrime Games"
+      - generic [ref=e10]:
+        - generic [ref=e11]: Category
+        - combobox "Category" [ref=e12] [cursor=pointer]:
+          - option "All Categories"
+          - option "Action"
+          - option "Adventure"
+          - option "Puzzle" [selected]
+          - option "RPG"
+          - option "Strategy"
+      - generic [ref=e13]:
+        - generic [ref=e14]: Sort By
+        - combobox "Sort By" [ref=e15] [cursor=pointer]:
+          - option "Top Rated" [selected]
+          - option "Name A–Z"
+          - option "Name Z–A"
+    - generic [ref=e16]:
+      - generic [ref=e124]:
+        - heading "Algorithm Arena" [level=3] [ref=e125]
+        - generic [ref=e126]:
+          - generic [ref=e127]: Puzzle
+          - generic [ref=e128]: ByteCraft Entertainment
+        - paragraph [ref=e129]: Algorithm Arena drops you into competitive puzzle chambers where only the most efficient solutions survive. Race against the clock to implement sorting algorithms, optimize graph traversals, and prove that your code is faster than everyone else's.
+        - link "View details →" [ref=e130] [cursor=pointer]:
+          - /url: /games/algorithm-arena
+      - generic [ref=e131]:
+        - heading "Pixel Debugger" [level=3] [ref=e132]
+        - generic [ref=e133]:
+          - generic [ref=e134]: Puzzle
+          - generic [ref=e135]: PixelPrime Games
+        - paragraph [ref=e136]: Pixel Debugger challenges you to find and fix bugs hidden within beautifully crafted pixel-art worlds. Each level presents a broken program that you must debug by rearranging code blocks, fixing logic errors, and optimizing algorithms before time runs out.
+        - link "View details →" [ref=e137] [cursor=pointer]:
+          - /url: /games/pixel-debugger
+  - generic [ref=e103]:
+    - button "Menu" [ref=e104]:
+      - img [ref=e106]
+      - generic: Menu
+    - button "Inspect" [ref=e110]:
+      - img [ref=e112]
+      - generic: Inspect
+    - button "Audit" [ref=e114]:
+      - img [ref=e116]
+      - generic: Audit
+    - button "Settings" [ref=e119]:
+      - img [ref=e121]
+      - generic: Settings
