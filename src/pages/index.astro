@@ -10,7 +10,7 @@ const github = "https://github.com/zeke";
 <Layout title={`${name} — ${tagline}`} description={bio}>
   <section class="hero">
     <div class="hero-inner">
-      <img src="/avatar.jpg" alt="Toby Jordan-Smith" class="avatar-img" width="96" height="96" />
+      <div class="avatar" role="img" aria-label="Toby Jordan-Smith avatar">TJ</div>
       <div>
         <h1>{name}</h1>
         <p class="tagline">{tagline}</p>
@@ -72,17 +72,12 @@ const github = "https://github.com/zeke";
     display: grid;
     place-items: center;
     font-weight: 700;
+    font-size: 2rem;
     background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(14,165,233,0.08));
     color: var(--primary);
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     overflow: hidden;
-  }
-  .avatar-img {
-    width: 96px;
-    height: 96px;
-    border-radius: 9999px;
-    object-fit: cover;
-    display: block;
+    flex-shrink: 0;
   }
   h1 {
     margin: 0 0 0.25rem;
